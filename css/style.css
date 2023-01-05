@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    place-content: center;
+    place-items: center;
+    background:  #C8C8A9;;
+}
+
+
+
+
+
+.qu-qusu {
+    --s:250px;
+    --b:8px;
+    --g:14px;
+    --c: rgb(224,192,21);
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid rgba(32, 32, 32, 0.6);
+    outline-offset: calc(var(--s)/-1.8);
+    transition: 0.3s;
+    border-radius: 50%;
+    border:  solid rgb(224,192,21);
+    box-shadow: -4px 5px 17px 7px rgba(224,192,21,0.59);
+    -webkit-box-shadow: -4px 5px 17px 7px rgba(224,192,21,0.59);
+    -moz-box-shadow: -4px 5px 17px 7px rgba(224,192,21,0.59);
+}
+
+.qu-qusu:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+    border: none;
+    box-shadow: none;
+}
